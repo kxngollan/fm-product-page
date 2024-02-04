@@ -1,0 +1,44 @@
+.main-image {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 5%;
+}
+
+.bottom-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.bottom-images img {
+  width: 20%;
+  aspect-ratio: 1/1;
+  border-radius: 10%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.bottom-images img {
+  transition: border 0.3s;
+}
+
+.bottom-images img:hover {
+  background-color: #ff7e1b;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 660px) {
+  .bottom-images {
+    display: none;
+  }
+
+  .main-image {
+    width: 100%;
+    border-radius: 0;
+  }
+}
