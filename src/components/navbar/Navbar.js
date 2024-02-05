@@ -4,7 +4,7 @@ import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   const navLinks = [
     {
       name: "Collection",
@@ -33,7 +33,7 @@ const Navbar = () => {
       <nav>
         <MobileNav navLinks={navLinks} />
         <img className="logo" src={logo} alt="logo" />
-        <DesktopNav navLinks={navLinks} />
+        <DesktopNav navLinks={navLinks} cart={cart} />
       </nav>
       <hr />
     </>

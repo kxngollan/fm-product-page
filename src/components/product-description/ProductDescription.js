@@ -3,11 +3,11 @@ import Describe from "./Describe";
 import ProductAmount from "./ProductAmount";
 import "./ProductDescription.css";
 
-const ProductDescription = () => {
+const ProductDescription = ({ addToCart }) => {
   return (
     <div className="product-description">
       <Describe />
-      <ProductAmount />
+      <ProductAmount addToCart={addToCart} />
     </div>
   );
 };

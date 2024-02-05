@@ -1,8 +1,14 @@
 import React from "react";
-import imageProduct1 from "../images/image-product-1.jpg";
 
-const MainImage = () => {
-  return <img className="main-image" src={imageProduct1} alt="product" />;
+const MainImage = ({ product, index, openModal }) => {
+  return (
+    <img
+      className="main-image"
+      src={product.images[index].big}
+      alt="product"
+      onClick={openModal}
+    />
+  );
 };
 
 export default MainImage;

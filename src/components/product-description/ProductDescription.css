@@ -120,10 +120,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
   }
 
   .quantity-control {
-    width: 90%;
+    width: 100%;
   }
 
   .quantity-control button {
@@ -134,7 +135,11 @@
     width: 80%;
   }
   .add-to-cart {
-    width: 90%;
+    width: 100%;
     margin-bottom: 3rem;
+  }
+
+  .add-to-cart:hover {
+    transform: unset;
   }
 }

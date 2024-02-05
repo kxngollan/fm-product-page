@@ -3,7 +3,7 @@ import { ReactComponent as Cart } from "../images/icon-cart.svg";
 import { ReactComponent as Minus } from "../images/icon-minus.svg";
 import { ReactComponent as Plus } from "../images/icon-plus.svg";
 
-const ProductAmount = () => {
+const ProductAmount = ({ addToCart }) => {
   const [amount, setAmount] = useState(0);
 
   return (

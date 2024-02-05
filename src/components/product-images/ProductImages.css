@@ -6,6 +6,9 @@
   margin-bottom: 1.5rem;
   border-radius: 5%;
 }
+.mobile-images {
+  display: none;
+}
 
 .bottom-images {
   display: flex;
@@ -32,13 +35,34 @@
   opacity: 50%;
 }
 
+.displaying {
+  background-color: #ff7e1b;
+}
+
 @media screen and (max-width: 660px) {
-  .bottom-images {
+  .bottom-images,
+  .main-image {
     display: none;
   }
-
-  .main-image {
+  .mobile-images {
+    display: block;
     width: 100%;
-    border-radius: 0;
+    position: relative;
+  }
+
+  .mobile-images img {
+    width: 100%;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 100%;
+  }
+
+  .arrow:nth-child(3) {
+    right: 0;
   }
 }
