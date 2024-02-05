@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the product page of my sleek sneaker website! This full-responsive design showcases. Users can explore the product, view multiple photos, and enjoy a modal display for a closer look.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+Item Display: Clearly presents the product with detailed information.
+Photo Gallery: Multiple photos available for users to view.
+Modal Feature: Clicking on the main photo opens a modal for a closer look at all photos.
+Interactive Buttons: Users can easily interact with buttons to add the product to their cart.
 
-### `npm start`
+## Difficulties Faced
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The primary challenge during development was achieving pixel-perfect placement and styling. Extensive research was conducted, and references were consulted to ensure a flawless presentation. Some styling improvements could further enhance the user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+ReactJS: Built with Create React App for a seamless and efficient development experience.
+CSS: Utilized Vanilla CSS for styling, ensuring a clean and responsive design.
+Icons: Images and icons are thoughtfully integrated into the page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Improvement Opportunities
 
-### `npm run build`
+This project has great scalability potential. Consider the following improvements:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Multiple Pages: Implement React Router to facilitate the creation of multiple pages.
+Backend Integration: Enhance functionality by adding a backend using technologies like Flask, Django (Python), or Express (Node.js).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to run locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Download repo
 
-### `npm run eject`
+git clone https://github.com/kxngollan/fm-product-page.git
+cd fm-product-page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Download dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm i or npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# run locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+this will make it run on http://localhost:3000/ in your local browser
