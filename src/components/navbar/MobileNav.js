@@ -7,6 +7,8 @@ const MobileNav = ({ navLinks }) => {
 
   if (open) {
     document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
   }
 
   return (
@@ -16,7 +18,7 @@ const MobileNav = ({ navLinks }) => {
       </div>
       {open ? (
         <>
-          <div className="backdrop"></div>
+          <div className="backdrop" onClick={() => setOpen(!open)}></div>
           <div className="side-menu">
             <Close onClick={() => setOpen(!open)} />
             <ul className="side-links">

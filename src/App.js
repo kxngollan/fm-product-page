@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import ProductPage from "./components/ProductPage";
 import Navbar from "./components/navbar/Navbar";
@@ -9,9 +10,10 @@ import smallPhoto1 from "./components/images/image-product-1-thumbnail.jpg";
 import smallPhoto2 from "./components/images/image-product-2-thumbnail.jpg";
 import smallPhoto3 from "./components/images/image-product-3-thumbnail.jpg";
 import smallPhoto4 from "./components/images/image-product-4-thumbnail.jpg";
-import { useState } from "react";
 
 function App() {
+  const [cart, setCart] = useState([]);
+
   const product = {
     name: "Fall Limited Edition Sneakers",
     description:
@@ -26,8 +28,6 @@ function App() {
       { big: bigPhoto4, small: smallPhoto4 },
     ],
   };
-
-  const [cart, setCart] = useState([]);
 
   const addToCart = (product, amount) => {
     for (let i = 0; i < amount; i++) {

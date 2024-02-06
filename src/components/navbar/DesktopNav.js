@@ -15,8 +15,8 @@ const DesktopNav = ({ navLinks, cart }) => {
         })}
       </ul>
       <div className="cart-profile">
-        <div className="total">
-          <img src={Cart} alt="cart" onClick={() => setShowCart(!showCart)} />
+        <div className="total" onClick={() => setShowCart(!showCart)}>
+          <img src={Cart} alt="cart" />
           {total > 0 ? <span className="num">{total}</span> : ""}
           {total > 9 ? <span className="num">9+</span> : ""}
 
@@ -24,7 +24,25 @@ const DesktopNav = ({ navLinks, cart }) => {
             <div className="cart-items">
               <h3>Cart</h3>
               <hr />
-              <p>Your cart is empty</p>
+              {cart.length === 0 ? (
+                <p>Your cart is empty</p>
+              ) : (
+                cart.map((item, index) => {
+                  return (
+                    <div key={index} className="cart-item">
+                      <img
+                        src={item.images[0].small}
+                        className="cart-img"
+                        alt={item.name}
+                      />
+                      <div className="cart-item-info">
+                        <h4>{item.name}</h4>
+                        <p>$ {item.price}</p>
+                      </div>
+                    </div>
+                  );
+                })
+              )}
             </div>
           ) : (
             ""

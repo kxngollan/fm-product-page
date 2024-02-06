@@ -3,8 +3,13 @@ import { ReactComponent as Cart } from "../images/icon-cart.svg";
 import { ReactComponent as Minus } from "../images/icon-minus.svg";
 import { ReactComponent as Plus } from "../images/icon-plus.svg";
 
-const ProductAmount = ({ addToCart }) => {
+const ProductAmount = ({ product, addToCart }) => {
   const [amount, setAmount] = useState(0);
+
+  const cartAdd = () => {
+    addToCart(product, amount);
+    setAmount(0);
+  };
 
   return (
     <div className="product-amount">
@@ -21,7 +26,12 @@ const ProductAmount = ({ addToCart }) => {
         </button>
       </div>
 
-      <button className="add-to-cart" type="button">
+      <button
+        className="add-to-cart"
+        type="button"
+        onClick={cartAdd}
+        disabled={amount <= 0}
+      >
         <Cart className="cart" />
         Add to Cart
       </button>
